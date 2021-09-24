@@ -109,7 +109,8 @@ def after_login_incorrect():
     <p> <a href="hello.py"> Try again. </a>
     """)
 
-def main():    
+def main():
+    # code from the helper doc on eclass: https://eclass.srv.ualberta.ca/mod/page/view.php?id=5442506
     posted_bytes = os.environ.get("CONTENT_LENGTH", 0)
     if posted_bytes:
         posted = sys.stdin.read(int(posted_bytes))
